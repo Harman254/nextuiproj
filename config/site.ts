@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-	name: "Next.js + NextUI",
+	name: "Nexcent",
 	description: "Make beautiful websites regardless of your design experience.",
 	navItems: [
 		{
@@ -9,61 +9,26 @@ export const siteConfig = {
 			href: "/",
 		},
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Service",
+      href:"/service",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: "Feature",
+      href: "/feature",
     },
     {
-      label: "Blog",
-      href: "/blog",
+      label: "Product",
+      href: "/product",
     },
     {
-      label: "About",
-      href: "/about",
+      label: "Testimonial",
+      href: "/testimonial",
+    },
+    {
+      label: "FAQ",
+      href: "/faq",
     }
-	],
-	navMenuItems: [
-		{
-			label: "Profile",
-			href: "/profile",
-		},
-		{
-			label: "Dashboard",
-			href: "/dashboard",
-		},
-		{
-			label: "Projects",
-			href: "/projects",
-		},
-		{
-			label: "Team",
-			href: "/team",
-		},
-		{
-			label: "Calendar",
-			href: "/calendar",
-		},
-		{
-			label: "Settings",
-			href: "/settings",
-		},
-		{
-			label: "Help & Feedback",
-			href: "/help-feedback",
-		},
-		{
-			label: "Logout",
-			href: "/logout",
-		},
-	],
-	links: {
-		github: "https://github.com/nextui-org/nextui",
-		twitter: "https://twitter.com/getnextui",
-		docs: "https://nextui.org",
-		discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev"
-	},
+	]
+	
+	
 };
