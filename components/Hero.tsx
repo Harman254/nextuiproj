@@ -1,7 +1,5 @@
 
-"use client"
-import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Search from './search'
 import SearchContent from './SearchContent'
 import { WeatherData } from '@/types'
@@ -11,6 +9,8 @@ type HeroProps = {
   data: WeatherData
 
 }
+
+//! harrman you changed this to a server component
 
 const Hero: React.FC<HeroProps> = ({ data }) => {
   console.log(data)
@@ -22,7 +22,6 @@ const Hero: React.FC<HeroProps> = ({ data }) => {
       <div className='h-2/3 justify-center items-center'>
         {data ? (<SearchContent data={data}/>): <Overview />}
       </div>
-      <div className='bg-red-500 h-1/3'></div>
     </div>
   )
 }
